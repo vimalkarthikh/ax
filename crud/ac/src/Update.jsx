@@ -27,7 +27,7 @@ function Update() {
     //const navigate =useNavigate();
     const handleUpdate=(event)=>{
         event.preventDefault();
-        axios.put(`https://64f0578e8a8b66ecf7797e2c.mockapi.io/ac/${id}`,val).then((r)=>{
+        axios.put(`https://64f0578e8a8b66ecf7797e2c.mockapi.io/ac/${id}`,val).then((r)=>{setVal(r.data)
             navigate('/');
 
     })
